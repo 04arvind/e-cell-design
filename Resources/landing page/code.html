@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>E-Cell HMRITM | Cultivating the Unicorns of Tomorrow</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f97415",
+                        "background-light": "#f8f7f5",
+                        "background-dark": "#09090b",
+                        "zinc": {
+                            "900": "#18181b",
+                            "950": "#09090b",
+                            "800": "#27272a",
+                            "400": "#a1a1aa"
+                        }
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .glass-card {
+            background: rgba(24, 24, 27, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hero-gradient {
+            background: linear-gradient(to right, #f97415, #a1a1aa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .floating-effect {
+            box-shadow: 0 20px 50px rgba(249, 116, 21, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-zinc-900 dark:text-white min-h-screen selection:bg-primary/30">
+<div class="relative overflow-x-hidden">
+<!-- Glow Orbs -->
+<div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary/10 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="absolute bottom-[20%] right-[-5%] w-[30%] h-[30%] bg-primary/5 rounded-full blur-[100px] pointer-events-none"></div>
+<!-- Navigation -->
+<header class="sticky top-0 z-50 w-full border-b border-zinc-800/50 bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="bg-primary p-1.5 rounded-lg">
+<span class="material-symbols-outlined text-white text-2xl">rocket_launch</span>
+</div>
+<span class="text-xl font-bold tracking-tight">E-Cell HMRITM</span>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium text-zinc-400 hover:text-primary transition-colors" href="#">About</a>
+<a class="text-sm font-medium text-zinc-400 hover:text-primary transition-colors" href="#">Initiatives</a>
+<a class="text-sm font-medium text-zinc-400 hover:text-primary transition-colors" href="#">Team</a>
+<a class="text-sm font-medium text-zinc-400 hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden sm:block text-sm font-semibold text-zinc-400 hover:text-white px-4 py-2 transition-colors">Login</button>
+<button class="bg-primary hover:bg-primary/90 text-white text-sm font-bold px-6 py-2.5 rounded-lg transition-all shadow-lg shadow-primary/20">
+                        Join the Movement
+                    </button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative pt-20 pb-32 px-6">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<!-- Left Side: Content -->
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+                            Now Incubating for Cohort '24
+                        </div>
+<h1 class="text-5xl md:text-7xl font-black leading-[1.1] tracking-tight">
+<span class="hero-gradient">Cultivating the Unicorns of Tomorrow</span>
+</h1>
+<p class="text-lg md:text-xl text-zinc-400 max-w-lg leading-relaxed">
+                            Empowering student entrepreneurs at HMR Institute of Technology &amp; Management to Innovate, Lead, and Scale. We provide the platform for your ideas to take flight.
+                        </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<button class="flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white font-bold h-14 px-8 rounded-xl transition-all shadow-xl shadow-primary/25">
+                                Join the Movement
+                                <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="flex items-center justify-center gap-2 border border-zinc-700 hover:bg-zinc-800 text-white font-bold h-14 px-8 rounded-xl transition-all">
+                                View Initiatives
+                            </button>
+</div>
+</div>
+<!-- Right Side: 3D Floating Card -->
+<div class="relative group">
+<div class="absolute -inset-1 bg-gradient-to-r from-primary/50 to-zinc-400/30 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+<div class="relative glass-card p-6 rounded-2xl floating-effect transform transition-transform duration-500 hover:-translate-y-4">
+<div class="aspect-video w-full rounded-xl overflow-hidden mb-6 bg-zinc-800">
+<img class="w-full h-full object-cover grayscale-[0.2] contrast-[1.1]" data-alt="Modern collaborative startup workspace with high-tech equipment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADXukbTn2p-fD6Z86l6FCfR134qCCQuxbP0y6BY-3T7_SST9gp99EoIF6lWJ8kQlCF5Socjb6Vmw7DSNxROsAy5RGMluEmPzpneetN5qQG3yb3IJ-BpUWIfF_ra4KzCF3GzFJm9m4PqBgk-bsa7NdmOoNmHVW-nDy0zmrZ_27mzpYZ5wpeVHBMcqRnBMILDv3hkmw1_tFZ0ErKSCATbWHuswpce9OlwCTOOsKhq2Ubc7AETEM2uSFFGf_jHNItDW7cv8judvJpUam8"/>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex -space-x-3">
+<div class="w-10 h-10 rounded-full border-2 border-zinc-900 bg-zinc-800 flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Student entrepreneur profile 1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf49o1BoCCgtlt2cTIiQuM7jdXMX_KRUs_6bcNbwACTxYhnuve_kQRycDcrrSMqc9VFNPmWdShH44QI37aA4rwXQ6O4R8hHVP_lBzAMiFLYHYCDGBjtawCiMREUGkKKqeYZ1m6WnDjoDXEW1hpyKjSVWr72G9T5rwAvSKbdOc9mNZBdn-041-RAMbB9oEiUpzA74oOWgsbap4uVh8Hm72zkiu0rDVHg7XtBZzzxbR1RrM5O_Lg9idI7k2xuNnkp0nocnIsknv10G8l"/>
+</div>
+<div class="w-10 h-10 rounded-full border-2 border-zinc-900 bg-zinc-800 flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Student entrepreneur profile 2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZ3fV1tfm0H4WB-vGQaBQdE7tIuJZyLWd96V5WsD5XZc_kjqM0GFyzVvwXH8E5-TW3bLSxwgrcB89KJ2QXc3RljSo5Jhb1a8KoGZOGsHzK4rOcfDImHO1cno5jnEm4Ogmt9LgmXy-9kW2G3TjEj6GoKZIoE0tN0rMBju6B38nK5IhFrVkxRuAx1_OPx0UgT0h7TnMDWCjJ0ximgUIGSvd5ph4sb8cD3FHRQbiqU-KM5HHDyE9ZDxebB_M_ys7mIFCXlfFcbaELOjrz"/>
+</div>
+<div class="w-10 h-10 rounded-full border-2 border-zinc-900 bg-zinc-800 flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Student entrepreneur profile 3" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPqVxjA64aPcKlQHarofY2xS-mvR8ilWpERqg0c6rXXWpBV9Wpi-1WOV_M8AFwIrFZ1FXvmKSmnIi4WGfocR36I4tL_vm-7z-1zgyeDpGNGUj9MQr3cYKLc73ob-KMHOsm3Iok2Wi4n01F_CxYFEHNf3mXlH1ZDmkv2sPTky21BlVZZ3O8vAX08I0RGfUB5ygbhznh6GOBwBnw7e4-EzmMaVBR5PHzIvEY03iM_1izWkTxTrEkUDe1yjOss37gLYrr_1R08f-8TVrs"/>
+</div>
+<div class="w-10 h-10 rounded-full border-2 border-zinc-900 bg-primary flex items-center justify-center text-[10px] font-bold">
+                                        +50
+                                    </div>
+</div>
+<div class="text-right">
+<p class="text-xs text-zinc-400 font-medium">Community Size</p>
+<p class="text-sm font-bold text-white">5000+ Students</p>
+</div>
+</div>
+</div>
+<!-- Decorative element -->
+<div class="absolute -bottom-10 -right-10 w-32 h-32 glass-card rounded-2xl p-4 hidden md:flex flex-col items-center justify-center text-center shadow-2xl">
+<span class="text-primary font-black text-2xl tracking-tighter">95%</span>
+<span class="text-[10px] text-zinc-400 font-bold leading-tight">Success Rate in Pitching</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Impact Metrics Section -->
+<section class="py-24 px-6 relative">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="glass-card p-8 rounded-2xl text-center group hover:border-primary/50 transition-all duration-300">
+<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-white">business_center</span>
+</div>
+<h3 class="text-4xl font-black mb-2">50+</h3>
+<p class="text-zinc-400 font-medium">Startups Incubated</p>
+</div>
+<div class="glass-card p-8 rounded-2xl text-center group hover:border-primary/50 transition-all duration-300">
+<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-white">payments</span>
+</div>
+<h3 class="text-4xl font-black mb-2">₹10Cr+</h3>
+<p class="text-zinc-400 font-medium">Funding Raised</p>
+</div>
+<div class="glass-card p-8 rounded-2xl text-center group hover:border-primary/50 transition-all duration-300">
+<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-white">event_available</span>
+</div>
+<h3 class="text-4xl font-black mb-2">20+</h3>
+<p class="text-zinc-400 font-medium">Events Conducted</p>
+</div>
+<div class="glass-card p-8 rounded-2xl text-center group hover:border-primary/50 transition-all duration-300">
+<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-white">groups</span>
+</div>
+<h3 class="text-4xl font-black mb-2">5000+</h3>
+<p class="text-zinc-400 font-medium">Student Outreach</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Initiative Sneak Peek -->
+<section class="py-24 px-6 border-t border-zinc-900">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
+<div class="max-w-2xl">
+<h2 class="text-3xl md:text-5xl font-black mb-6">Empowering the Ecosystem</h2>
+<p class="text-zinc-400 text-lg leading-relaxed">
+                                From initial ideation to high-stakes investor pitches, we support every phase of the entrepreneurial journey within HMRITM.
+                            </p>
+</div>
+<a class="text-primary font-bold inline-flex items-center gap-2 group" href="#">
+                            Explore All Initiatives
+                            <span class="material-symbols-outlined transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="relative overflow-hidden rounded-2xl group">
+<img class="w-full aspect-[4/5] object-cover transition duration-700 group-hover:scale-110" data-alt="Collaborative workshop for student entrepreneurs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoFWIG5Fem9ItsW9hwFRHnzct4V2znz4YKnFwSfQa-rZmplerCulm0CD-_AgmmvuK00APXKJ383OvgDlJEYEvbw60pRvGEvJRIlss4A7Rfv9eyEmUazscwH5jiEQ80VJjS1r6JnzzhziPjKAfShMwqO5ljc8vCUmD22KTUwfyQfTMdm6DcMNpbbEG09AcCOJAb0GQtljYqhXNq7MS5Vlg0Q4nB63wwJL9cwOmsCsv6sNVYgsmDwrGJjv6ejbWysyD7xVE_2wXFpQQ7"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h4 class="text-2xl font-bold mb-2">Hatchery</h4>
+<p class="text-zinc-300 text-sm">6-month structured incubation program.</p>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-2xl group">
+<img class="w-full aspect-[4/5] object-cover transition duration-700 group-hover:scale-110" data-alt="Student pitching startup idea to judges" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAszt_wCi8yWmOs_UvaYBudBLDfmFoRVU2i2kddpynp7NLgncSdGo4a3xpxIAaKaljdXK_VPFvgSJTjZhpRl88B-BZMXMR4mo4W9ehj_bf0OfYn3bSJUrcpbEGNa7Cl1FjXYB9mu6YY4WN3dqYUlGcdz6Q0qae4lvjkdpjevSTKGJQbc7OsIWzB4CNN1ZBb27NIvEk1xPuzqTEjrvLI7MuVhEyaJWMnUMwsTa-K2MCco8W0L2Vx7VVk_gewDkDK5gTeqLSX-3sLkBTy"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h4 class="text-2xl font-bold mb-2">Pitch Perfect</h4>
+<p class="text-zinc-300 text-sm">Monthly mock pitching sessions with experts.</p>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-2xl group">
+<img class="w-full aspect-[4/5] object-cover transition duration-700 group-hover:scale-110" data-alt="Business networking event at college" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj6sfAtU8iOd-F50pcKKuja_Urx4VHUDToYdy-3IOOWUQzjyWU9-KPHv74S_lEn4-6yokm_FbxckpI-9n6KeBwBEM-7xoMbBd9Jw-aWI9BbY95JgjSNI_r7qZCR1Hb_R6SquAVrUoUdEzT2Z9KrTvh2NE_mcQN8TiTrqBBvxtucEZkZvvCxfYGhyFoIQFOPMxUJvRq4AOglcY-O0zc6SvdTjMURErn_RfX9Lc-0vbsYaM7vxY-g6z7DcLZqhfgtUbClNY8yQPuHiYw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h4 class="text-2xl font-bold mb-2">E-Summit</h4>
+<p class="text-zinc-300 text-sm">Annual flagship entrepreneurship convention.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action Banner -->
+<section class="py-24 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="relative glass-card rounded-[2rem] p-12 overflow-hidden text-center">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/20 blur-[100px] -mr-32 -mt-32"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-primary/10 blur-[100px] -ml-32 -mb-32"></div>
+<div class="relative z-10 space-y-8">
+<h2 class="text-4xl md:text-6xl font-black max-w-3xl mx-auto leading-tight">
+                                Your Entrepreneurial Journey <span class="text-primary">Starts Here.</span>
+</h2>
+<p class="text-zinc-400 text-lg max-w-xl mx-auto">
+                                Don't wait for the right moment. Create it. Join HMRITM's premier startup ecosystem today.
+                            </p>
+<div class="flex justify-center">
+<button class="bg-primary hover:bg-primary/90 text-white font-bold h-14 px-12 rounded-xl transition-all shadow-xl shadow-primary/25">
+                                    Apply Now
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-zinc-950 pt-24 pb-12 border-t border-zinc-900 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-1 space-y-6">
+<div class="flex items-center gap-3">
+<div class="bg-primary p-1 rounded-lg">
+<span class="material-symbols-outlined text-white text-xl">rocket_launch</span>
+</div>
+<span class="text-xl font-bold tracking-tight">E-Cell HMRITM</span>
+</div>
+<p class="text-zinc-500 text-sm leading-relaxed">
+                            The Entrepreneurship Cell of HMR Institute of Technology &amp; Management is dedicated to fostering a culture of innovation and leadership.
+                        </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">alternate_email</span>
+</a>
+<a class="w-10 h-10 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">link</span>
+</a>
+</div>
+</div>
+<div>
+<h5 class="font-bold mb-6">Quick Links</h5>
+<ul class="space-y-4 text-sm text-zinc-500">
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Our Initiatives</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Success Stories</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Core Team</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold mb-6">Support</h5>
+<ul class="space-y-4 text-sm text-zinc-500">
+<li><a class="hover:text-primary transition-colors" href="#">Incubation Help</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Legal Support</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Partnership</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">FAQs</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold mb-6">Contact Us</h5>
+<p class="text-sm text-zinc-500 mb-4">
+                            HMR Institute of Technology &amp; Management, Hamidpur, Delhi - 110036
+                        </p>
+<p class="text-sm text-zinc-300 font-medium underline">ecell@hmritm.ac.in</p>
+</div>
+</div>
+<div class="pt-8 border-t border-zinc-900 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-xs text-zinc-600">
+                        © 2024 Entrepreneurship Cell, HMRITM. All rights reserved.
+                    </p>
+<div class="flex gap-6 text-xs text-zinc-600">
+<a class="hover:text-zinc-400" href="#">Privacy Policy</a>
+<a class="hover:text-zinc-400" href="#">Terms of Use</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
