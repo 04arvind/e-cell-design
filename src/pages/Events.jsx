@@ -8,6 +8,15 @@ const Events = () => {
 
     const filters = ['All Events', 'Workshops', 'Guest Lectures', 'Competitions', 'Hackathons'];
 
+    const unsplashImages = [
+        "1556761175-5973dc0f32e7",
+        "1517245386807-bb43f82c33c4",
+        "1507679799987-c73779587ccf",
+        "1581091870622-2a4e017feef1",
+        "1559136555-9303baea8ebd",
+        "1521737604893-d14cc237f11d",
+    ];
+
     const upcomingEvents = [
         { title: "Mastering Business Model Canvas", category: "Workshop", date: "Oct 24", time: "10:00 AM - 02:00 PM", location: "Seminar Hall 1, HMRITM" },
         { title: "Ideathon 2024: Pitch Perfect", category: "Competition", date: "Nov 05", time: "09:00 AM - 06:00 PM", location: "Main Auditorium, HMRITM" },
@@ -83,9 +92,9 @@ const Events = () => {
                             whileHover={{ y: -10 }}
                             className="glass-card group overflow-hidden border-white/5 hover:border-primary/50 transition-all"
                         >
-                            <div className="relative h-56 overflow-hidden">
+<div className="relative h-56 overflow-hidden">
                                 <img
-                                    src={`https://images.unsplash.com/photo-${15000 + i}?auto=format&fit=crop&w=800&q=80`}
+                                    src={`https://images.unsplash.com/photo-${unsplashImages[i % unsplashImages.length]}?auto=format&fit=crop&w=800&q=80`}
                                     alt={event.title}
                                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                                 />
@@ -130,7 +139,7 @@ const Events = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                         <div className="relative group h-64 rounded-2xl overflow-hidden col-span-1 lg:col-span-2">
-                            <img className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform" src="https://images.unsplash.com/photo-1475721027187-4001bd7072a3?auto=format&fit=crop&w=1200&q=80" alt="Legacy" />
+                            <img className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform" src="https://images.unsplash.com/photo-1531058020387-3be344556be6" alt="Legacy" />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent p-6 flex flex-col justify-end">
                                 <span className="text-primary font-bold text-sm mb-1 uppercase tracking-wider">Impact Event</span>
                                 <h4 className="text-xl font-bold mb-1 font-display">E-Summit '23 Highlights</h4>

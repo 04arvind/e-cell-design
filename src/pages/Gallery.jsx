@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 
 const Gallery = () => {
     const photos = [
-        "https://images.unsplash.com/photo-1540575861501-7ad05823c93e",
+        "https://images.unsplash.com/photo-1523240795612-9a054b0db644",
         "https://images.unsplash.com/photo-1515187029135-18ee286d815b",
         "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
         "https://images.unsplash.com/photo-1517048676732-d65bc937f952",

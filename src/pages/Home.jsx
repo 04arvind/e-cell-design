@@ -125,15 +125,21 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Our Domains Section */}
+{/* Our Domains Section */}
             <section className="py-24 px-6 bg-neutral-dark/50 relative">
                 <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-16">
+                    <motion.div 
+                        initial={{ opacity: 0, y: -20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                        className="text-center mb-16"
+                    >
                         <h2 className="text-4xl md:text-5xl font-black mb-6 font-display">Our <span className="text-primary">Domains</span></h2>
                         <p className="text-neutral-muted text-lg max-w-2xl mx-auto">
                             Specialized teams driving innovation across multiple verticals. Where expertise meets execution.
                         </p>
-                    </div>
+                    </motion.div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                         {[
@@ -146,19 +152,41 @@ const Home = () => {
                         ].map((domain, i) => (
                             <motion.div
                                 key={i}
-                                whileHover={{ y: -10, rotateX: 5, rotateY: 5 }}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
+                                initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
+                                whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+                                whileHover={{ y: -15, scale: 1.02, rotateX: 10, rotateY: 10, boxShadow: "0 25px 50px -12px rgba(13, 242, 204, 0.25)" }}
                                 viewport={{ once: true }}
-                                transition={{ delay: i * 0.1 }}
-                                className="glass-card p-8 rounded-2xl border-white/5 hover:border-primary/50 transition-all group relative overflow-hidden"
+                                transition={{ 
+                                    delay: i * 0.15,
+                                    type: "spring",
+                                    stiffness: 100,
+                                    damping: 10
+                                }}
+                                className="glass-card p-8 rounded-2xl border-white/5 hover:border-primary/50 transition-all group relative overflow-hidden cursor-pointer"
                             >
-                                <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-2xl -mr-16 -mt-16 group-hover:bg-primary/10 transition-all"></div>
-                                <div className="w-14 h-14 bg-neutral-dark rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform border border-white/5 group-hover:border-primary/50">
+                                <motion.div 
+                                    className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-2xl -mr-16 -mt-16 group-hover:bg-primary/20 transition-all"
+                                    whileHover={{ scale: 1.5, opacity: 1 }}
+                                />
+                                <motion.div 
+                                    className="w-16 h-16 bg-neutral-dark rounded-xl flex items-center justify-center mb-6 border border-white/5 group-hover:border-primary/50 relative z-10"
+                                    whileHover={{ scale: 1.1, rotate: 5 }}
+                                    transition={{ type: "spring", stiffness: 300 }}
+                                >
                                     <domain.icon className="text-primary" size={32} />
-                                </div>
-                                <h3 className="text-2xl font-bold mb-3 font-display text-white group-hover:text-primary transition-colors">{domain.title}</h3>
-                                <p className="text-neutral-muted text-sm leading-relaxed">{domain.desc}</p>
+                                </motion.div>
+                                <motion.h3 
+                                    className="text-2xl font-bold mb-3 font-display text-white group-hover:text-primary transition-colors relative z-10"
+                                    whileHover={{ scale: 1.05 }}
+                                >
+                                    {domain.title}
+                                </motion.h3>
+                                <p className="text-neutral-muted text-sm leading-relaxed relative z-10">{domain.desc}</p>
+                                <motion.div 
+                                    className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent transform -translate-x-full"
+                                    whileHover={{ translateX: 0 }}
+                                    transition={{ duration: 0.5 }}
+                                />
                             </motion.div>
                         ))}
                     </div>
@@ -190,7 +218,7 @@ const Home = () => {
                             <div key={i} className="relative overflow-hidden rounded-2xl group aspect-[4/5]">
                                 <img
                                     className="w-full h-full object-cover transition duration-700 group-hover:scale-110"
-                                    src={`https://images.unsplash.com/photo-${i === 0 ? '1531482615713-2afd69097998' : i === 1 ? '1556761175-5973ac0f9648' : '1540575467063-17e6c4c790b8'}?auto=format&fit=crop&w=800&q=80`}
+                                    src={`https://images.unsplash.com/photo-${i === 0 ? '1531482615713-2afd69097998' : i === 1 ? '1531482615713-2afd69097998' : '1531482615713-2afd69097998'}?auto=format&fit=crop&w=800&q=80`}
                                     alt={item.title}
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-80"></div>

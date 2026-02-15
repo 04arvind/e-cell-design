@@ -13,7 +13,7 @@ const Team = () => {
         { name: "Rohan Vats", role: "Technical Head", img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop" },
         { name: "Sneha Rawat", role: "Events Lead", img: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop" },
         { name: "Aryan Singh", role: "Incubation Head", img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1887&auto=format&fit=crop" },
-        { name: "Isha Gupta", role: "Marketing Head", img: "https://images.unsplash.com/photo-1598550832205-d07e4943614a?q=80&w=1915&auto=format&fit=crop" }
+        { name: "Isha Gupta", role: "Marketing Head", img: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop" }
     ];
 
     const containerVariants = {
