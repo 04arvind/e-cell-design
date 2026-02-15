@@ -40,11 +40,11 @@ const JoinUs = () => {
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div className="flex flex-col gap-2">
                                         <label className="text-sm font-semibold text-neutral-muted">Full Name</label>
-                                        <input className="w-full px-4 py-3 rounded-lg border border-white/10 bg-white/5 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all text-white" placeholder="John Doe" type="text" />
+                                        <input className="w-full px-4 py-3 rounded-lg border border-white/10 bg-white/5 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all text-white" placeholder="Arvind Rawat" type="text" />
                                     </div>
                                     <div className="flex flex-col gap-2">
                                         <label className="text-sm font-semibold text-neutral-muted">Email Address</label>
-                                        <input className="w-full px-4 py-3 rounded-lg border border-white/10 bg-white/5 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all text-white" placeholder="john@example.com" type="email" />
+                                        <input className="w-full px-4 py-3 rounded-lg border border-white/10 bg-white/5 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all text-white" placeholder="arvind@example.com" type="email" />
                                     </div>
                                 </div>
                                 <div className="flex flex-col gap-2">

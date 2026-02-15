@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Layout from '../components/Layout';
 
@@ -12,6 +12,25 @@ const Gallery = () => {
         "https://images.unsplash.com/photo-1523240795612-9a054b0db644"
     ];
 
+    const PhotoCard = ({ url, i }) => {
+        const [isClicked, setIsClicked] = useState(false);
+
+        return (
+            <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true, amount: 0.2 }}
+                className="relative rounded-2xl overflow-hidden group border border-white/5"
+                onClick={() => setIsClicked(!isClicked)}
+            >
+                <img src={`${url}?auto=format&fit=crop&w=800&q=80`} alt="Event" className="w-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <div className={`absolute inset-0 bg-primary/20 transition-opacity flex items-center justify-center backdrop-blur-sm ${isClicked ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}>
+                    <span className="bg-white text-neutral-dark px-4 py-2 rounded-lg font-bold">View Moments</span>
+                </div>
+            </motion.div>
+        );
+    };
+
     return (
         <Layout>
             <section className="py-24 px-6 lg:px-20 max-w-7xl mx-auto">
@@ -22,18 +41,7 @@ const Gallery = () => {
 
                 <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
                     {photos.map((url, i) => (
-                        <motion.div
-                            key={i}
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            viewport={{ once: true }}
-                            className="relative rounded-2xl overflow-hidden group border border-white/5"
-                        >
-                            <img src={`${url}?auto=format&fit=crop&w=800&q=80`} alt="Event" className="w-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                            <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
-                                <span className="bg-white text-neutral-dark px-4 py-2 rounded-lg font-bold">View Moments</span>
-                            </div>
-                        </motion.div>
+                        <PhotoCard key={i} url={url} i={i} />
                     ))}
                 </div>
             </section>

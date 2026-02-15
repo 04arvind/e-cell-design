@@ -47,6 +47,7 @@ const Navbar = () => {
                     <Link to="/team" onClick={() => setIsOpen(false)} className="text-lg font-medium text-neutral-muted">Team</Link>
                     <Link to="/gallery" onClick={() => setIsOpen(false)} className="text-lg font-medium text-neutral-muted">Gallery</Link>
                     <Link to="/faq" onClick={() => setIsOpen(false)} className="text-lg font-medium text-neutral-muted">FAQ</Link>
+                    <Link to="/join" onClick={() => setIsOpen(false)} className="text-lg font-medium text-neutral-muted">Contact</Link>
                     <Link to="/join" onClick={() => setIsOpen(false)} className="bg-primary text-neutral-dark text-center py-3 rounded-lg font-bold">
                         Apply Now
                     </Link>
